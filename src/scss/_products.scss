@@ -1,0 +1,48 @@
+.products {
+    background-color: #f7f8f3;
+  color: $primary;
+  text-align: center;
+  &__title {
+      font-family: 'Oswald', sans-serif;
+      font-size: 30px;
+      color: $primary;
+      text-align: center;
+      margin: 100px 0 75px 0;
+      padding: 0 30px;
+      letter-spacing: 7px;
+  }
+
+  &__wrapp {
+      height: 260px;
+      vertical-align: middle;
+      position: relative;
+      background-color: #fff;
+  }
+
+  &__img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+  }
+
+  &__text {
+      float: left;
+      text-align: left;
+      padding: 20px 30px;
+  }
+
+  &__price {
+      background-color: #fff;
+      background-color: #f1f1f1;
+
+  }
+}
+
+.swiper__slide {
+    max-width: 30%;
+}
+
+@media screen and(max-width:950px) {
+    
+}

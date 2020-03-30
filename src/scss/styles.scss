@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:300,400&display=swap');
+@import 'bootstrap/bootstrap';
+@import 'mixins';
+@import 'tabs';
+@import 'header';
+@import 'products';
+@import 'review';
+@import 'socials';
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    font-size: 14px;
+    overflow-x: hidden;
+}
+
+body {
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f8f3;
+}
+
+
+
+main {
+    background-color: #f7f8f3;
+}
+
+.logos {
+    width: 100%;
+    margin: 50px auto;
+
+    &__item {
+        display: block;
+        margin: 0 auto;
+    }
+
+    &__text {
+        color: $primary;
+        text-align: center;
+        font-family: 'Oswald', sans-serif;
+        font-size: 24px;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+    }
+}
+
+@media screen and(max-width:700px) {
+    .logos {
+        &__item {
+            max-width: 90%;
+        }
+    }
+}
+
+
+
+
+  
+  
+
+.ask {
+    color: $primary;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 0 130px;
+
+    &__title {
+        text-align: center;
+        padding: 100px 20px 50px;
+        font-family: 'Oswald', sans-serif;
+        font-size: 30px;
+        letter-spacing: 6px;
+    }
+
+    &__icon {
+        font-size: 18px;
+        font-weight: 300;
+    }
+
+    &__img {
+        color: $primary;
+        margin: 0 20px 0 0;
+    }
+
+    &__text {
+        padding: 0 0 0 55px;
+        font-family: 'Oswald', sans-serif;
+        font-size:18px;
+    }
+}
+
+.btn-link {
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    color: #778055;
+    text-transform: none;
+    letter-spacing: 4px;
+    @include hover {
+        text-decoration: none;
+    }
+}
+
+.card {
+    border-bottom: 2px solid #eaedde;
+}
+
+.card:first-child {
+    border-top: 2px solid #eaedde;
+} 
+
+
+
+
+
+
+
+footer {
+    text-align: center;
+    text-transform: uppercase;
+    color: #6e774a;
+    font-family: 'Oswald', sans-serif;
+    font-size: 11px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    margin: 0 0 50px 0;
+}
+
+.arrow-prev-left,
+.arrow-next-right {
+    width: 70px;
+    display: inline-block;
+    margin: 50px 0 0 0;
+    z-index: 20;
+    @include hover {
+        cursor: pointer;
+        outline: none;
+    }
+}
+
+
+
+
+
+

@@ -1,0 +1,77 @@
+
+<script src="https://kit.fontawesome.com/da9688d30f.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/main.min.js"></script>
+<script src="https://unpkg.com/swiper/js/swiper.js"></script>
+<script src="../js/scripts.js"></script>
+<script>
+    let menuElem = document.getElementById('burger');
+    let titleElem = menuElem.querySelector('.menu__toggler');
+
+    titleElem.onclick = function() {
+      menuElem.classList.toggle('open');
+    };
+</script>
+<script>
+  var mySwiper = new Swiper ('.swiper-container', {
+// Optional parameters
+slidesPerView: 3,
+spaceBetween: 40,
+loop: true,
+breakpoints: {
+  950:  {
+              slidesPerView: 3,
+              spaceBetween: 40,
+          },
+          700: {
+              slidesPerView: 2,
+              spaceBetween: 30,
+              centeredSlides: false
+               },
+               200: {
+              slidesPerView: 1,
+              spaceBetween: 30,
+              centeredSlides: false
+               },
+},
+
+pagination: {
+el: '.swiper-pagination',
+},
+
+// Navigation arrows
+navigation: {
+nextEl: '.arrow-next-right',
+prevEl: '.arrow-prev-left',
+},
+
+// And if we need scrollbar
+scrollbar: {
+el: '.swiper-scrollbar',
+}
+})
+</script>
+<script>
+var mySwiper = new Swiper ('.swiper-container--review', {
+// Optional parameters
+slidesPerView: 1,
+loop: true,
+
+// If we need pagination
+pagination: {
+el: '.swiper-pagination',
+},
+
+// Navigation arrows
+navigation: {
+nextEl: '.arrow-next',
+prevEl: '.arrow-prev',
+},
+
+// And if we need scrollbar
+scrollbar: {
+el: '.swiper-scrollbar',
+}
+});
+</script>

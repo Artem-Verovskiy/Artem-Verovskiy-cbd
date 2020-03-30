@@ -1,0 +1,58 @@
+<header>
+    <nav id="burger" class="container menu">
+        <div class="shadow"></div>
+        <span class="menu__toggler"><i class="fas fa-bars bars"></i><i class="fas fa-times close "></i></span>
+        <div class="header">
+            <div class="header__items menu__items">
+                    <div class="header__item menu__item">
+                        <a class="header__link menu__link header__link--through" href="#">home</a> 
+                    </div>
+                    <div class="header__item menu__item">
+                        <a class="header__link" href="#">products</a> 
+                    </div>
+                    <div class="header__item menu__item">
+                        <a class="header__link" href="#">faqs</a> 
+                    </div>
+                    <div class="header__item menu__item">
+                        <a class="header__link" href="#">contact us</a> 
+                    </div>
+            </div>
+            <div class="header__items">
+                <h2 class="header__title">cbd</h2>
+            </div>
+            <div class="header__items menu__items">
+                    <div class="header__item header__item--border  menu__item">
+                        <a class="header__link" href="#">login</a>
+                    </div>
+                    <div class="header__item header__item--border menu__item">
+                        <i class="fas fa-search"></i> search
+                        <!-- <form action="">
+                            <input class="input" type="search" id="search">
+                            <label for="search"><i class="fas fa-search"></i> search</label>
+                        </form> -->
+                    </div>
+                    <div class="header__item header__item--border menu__item">cart(0)</div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="slogan">
+        <h1 class="slogan__title">Enhancing Life<br> 
+            Excelling in Care</h1>
+        <p class="slogan__subtitle">Choose Wisely. Choose CBD.</p>
+        <a href="" class="slogan__btn">Start Shopping </a><br>
+        <a href="" class="slogan__link">See all products<i class="fas fa-long-arrow-alt-right"></i></a>
+    </div>
+
+    <div class="vertical">
+        <h3 class="vertical__text">CBD potion health</h3>
+    </div>
+    <script>
+        let menuElem = document.getElementById('burger');
+        let titleElem = menuElem.querySelector('.menu__toggler');
+    
+        titleElem.onclick = function() {
+          menuElem.classList.toggle('open');
+        };
+    </script>
+</header>

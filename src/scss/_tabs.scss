@@ -1,0 +1,191 @@
+.tabs {
+    font-size: 0;
+    margin: 0 auto;
+    text-align: center;
+    color: $primary;
+    padding: 0 20px;
+    text-align: left;
+
+    &__title {
+        font-family: 'Oswald', sans-serif;
+        font-size: 24px;
+        text-transform: uppercase;
+        letter-spacing: 6px;
+        margin: 0;
+        padding: 100px 0 0 0;
+    }
+
+    &__text {
+        font-family: 'Oswald', sans-serif;
+        font-weight: 300;
+        font-size: 18px;
+        color: #6e774a;
+        padding: 45px 0 0 0;
+        margin: 0;
+    }
+
+    &__pag {
+        display: flex;
+        flex-wrap: wrap;
+        min-height: 700px;
+    }
+
+    &__content {
+        width: calc( 100% / 2 - 50px);
+        display: inline-block;
+        padding: 0;
+        &--sm {
+            padding: 20px 90px 20px 0;
+            margin: 0;
+        }
+    }
+
+    &__img {
+        display: inline-block;
+        margin: 0 0 30px;
+    }
+  }
+  
+  .tabs>input[type="radio"] {
+    display: none;
+  }
+  
+  .tabs>div {
+    /* скрыть контент по умолчанию */
+    display: none;
+    padding: 10px 15px;
+    font-size: 16px;
+  }
+  
+  /* отобразить контент, связанный с выбранной радиокнопкой (input type="radio") */
+  #tab-btn-1:checked~#content-1,
+  #tab-btn-2:checked~#content-2,
+  #tab-btn-3:checked~#content-3 {
+    display: block;
+  }
+  
+  .tabs>label {
+    display: inline-block;
+    text-transform: uppercase;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 2px 8px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: $primary;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+    cursor: pointer;
+    position: relative;
+    top: 1px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    letter-spacing: 7px;
+    margin: 0 90px 0 0;
+  }
+  
+  .tabs>label:not(:first-of-type) {
+    border-left: none;
+  }
+  
+  .tabs>input[type="radio"]:checked+label {
+    border-bottom: 2px solid $primary;
+    transition: 0.4s ease-in-out;
+  }
+
+  @media screen and(max-width:1070px) {
+    .tabs>label {
+        margin: 0 30px 0 0;
+        font-size: 20px;
+    }
+
+    .tabs {
+
+        &__img {
+            width: 150%;
+        }
+
+        &__content {
+            padding: 0 30px 20px 20px;
+        }
+    }
+  }
+
+  @media screen and(max-width:900px) {
+      .tabs {
+          padding: 10px 0;
+          &__text {
+              padding: 10px;
+              font-size: 16px;
+          }
+
+          &__title {
+              padding: 50px 0 10px 10px;
+              font-size: 30px;
+          }
+
+          &__img {
+              margin: 0 20px 50px 0;
+          }
+
+          &__content {
+              display: block;
+              width: 100%;
+          }
+      }
+  }
+
+  @media screen and(max-width:735px) {
+    .tabs {
+        label {
+            font-size: 16px;
+            margin: 0 20px 0 0;
+        }
+
+        &__img {
+            margin: 0 0 50px 0;
+            width: 100%;
+        }
+
+        &__content {
+            padding: 0 15px 10px 0;
+            display: block;
+        }
+    }
+  }
+
+  @media screen and(max-width:610px) {
+      .tabs {
+          label {
+              letter-spacing: 2px;
+              margin: 0 10px 0 0;
+          }
+
+          &__title {
+              font-size: 22px;
+          }
+      }
+  }
+
+  @media screen and(max-width:410px) {
+      .tabs {
+          label {
+              letter-spacing: 1px;
+              margin: 0 4px 0 0;
+              font-size: 14px;
+          }
+
+          &__text {
+              padding: 10px 0;
+          }
+
+          &__title {
+              letter-spacing: 3px;
+          }
+
+          &__content--sm {
+              padding: 10px 0;
+          }
+      }
+  }

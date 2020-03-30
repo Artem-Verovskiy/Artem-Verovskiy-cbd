@@ -1,0 +1,130 @@
+
+.socials {
+    text-align: center;
+    color: $primary;
+    padding: 50px 20px;
+
+    &__title {
+        font-family: 'Oswald', sans-serif;
+        font-size: 60px;
+        color: #6e774a;
+        position: relative;
+
+        &:before {
+            content: ' ';
+            display: inline-block;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            border-bottom: 2px solid #6e774a;
+            width: 35%;
+        }
+
+        &:after {
+            content: ' ';
+            display: inline-block;
+            position: absolute;
+            top: 50%;
+            right: 0;
+            border-bottom: 2px solid #6e774a;
+            width: 35%;
+        }
+    }
+
+    &__icon {
+        font-size: 20px;
+        color: #6e774a;
+        @include hover {
+            transform: scale(1.5);
+        }
+    }
+
+    &__subscribe {
+        text-align: center;
+        font-family: 'Oswald', sans-serif;
+        font-size: 18px;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        padding: 0 0 25px 0;
+    }
+
+    &__input {
+        padding: 10px 35px 10px 25px;
+    }
+
+    &__btn {
+        padding: 10px 30px;
+    }
+}
+
+.flex {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 20px;
+    color: #6e774a;
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+
+        &--edit {
+            display: flex;
+            justify-content: space-around;
+            width: 30%;
+            padding: 0 40px 0 50px;
+            position: relative;
+            &:before {
+                content: '';
+                border-left: 2px solid #6e774a;
+                position: absolute;
+                height: 55px;
+                left: 49%;
+                bottom: 0;
+            }
+        }
+    }
+
+    &__link {
+        color: #6e774a;
+        font-family: 'Oswald', sans-serif;
+        font-size: 14px;
+        font-weight: 300;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        line-height: 2.5;
+        @include hover {
+            text-decoration: none;
+            color: #dd4306;
+            text-shadow: 1px 1px 2px #b3f304, 0 0 1em rgb(208, 230, 8);
+        }
+    }
+}
+
+@media screen and(max-width:500px) {
+    .socials {
+        &__title {
+            font-size: 45px;
+        }
+
+        &__input {
+            padding: 10px 20px 10px 15px;
+        }
+
+        &__btn {
+            padding: 10px 15px;
+        }
+
+        &__icon {
+            margin: 0 5px 0 0;
+        }
+    }
+
+    .flex {
+        &__link {
+            font-size: 12px;
+            letter-spacing: normal;
+        }
+    }
+}
+
