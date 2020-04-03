@@ -143,6 +143,20 @@ footer {
     }
 }
 
+.form-search {
+    display: inline-block;
+  }
+  .form-search input {
+    all: unset;
+  }
+
+  input[type="search"]::placeholder {
+      color: #f7f8f3;
+  }
+
+  input[value="&#128269;"] {
+    color: #f7f8f3;
+}
 
 
 

@@ -25,7 +25,12 @@
                         <a class="header__link" href="#">login</a>
                     </div>
                     <div class="header__item header__item--border menu__item">
-                        <i class="fas fa-search"></i> search
+                        <form action="/search/" target="_blank" class="form-search">
+                            <input type="hidden" name="searchid" value="808327">
+                            <input type="submit" value="&#128269;" class="search__icon">
+                            <input type="search" name="text" required placeholder="Search" class="search__icon">
+                          </form>
+                        <!-- <i class="fas fa-search"></i> search -->
                         <!-- <form action="">
                             <input class="input" type="search" id="search">
                             <label for="search"><i class="fas fa-search"></i> search</label>
