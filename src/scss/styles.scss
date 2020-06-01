@@ -11,10 +11,12 @@
     box-sizing: border-box;
 }
 
+
+html, body { overflow-x:hidden; }
+
 html {
     height: 100%;
     font-size: 14px;
-    overflow-x: hidden;
 }
 
 body {
@@ -23,7 +25,6 @@ body {
     padding: 0;
     background-color: #f7f8f3;
 }
-
 
 
 main {
@@ -57,11 +58,6 @@ main {
     }
 }
 
-
-
-
-  
-  
 
 .ask {
     color: $primary;
@@ -113,10 +109,6 @@ main {
 .card:first-child {
     border-top: 2px solid #eaedde;
 } 
-
-
-
-
 
 
 
