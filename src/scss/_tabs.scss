@@ -3,7 +3,7 @@
     margin: 0 auto;
     text-align: center;
     color: $primary;
-    padding: 0 20px;
+    padding: 0 5% 0 6%;
     text-align: left;
 
     &__title {
@@ -13,6 +13,7 @@
         letter-spacing: 6px;
         margin: 0;
         padding: 100px 0 0 0;
+        // text-align: unset;
     }
 
     &__text {
@@ -38,12 +39,25 @@
             padding: 20px 90px 20px 0;
             margin: 0;
         }
+        &--right {
+            text-align: right;
+        }
     }
 
     &__img {
         display: inline-block;
         margin: 0 0 30px;
     }
+  }
+
+.container {
+    margin: 0 auto;
+}
+
+  .tabs__content--right {
+    //   text-align: right;
+    //   float: right;
+      padding: 0 20px 0 40px;
   }
   
   .tabs>input[type="radio"] {
@@ -92,6 +106,12 @@
   .tabs>input[type="radio"]:checked+label {
     border-bottom: 2px solid $primary;
     transition: 0.4s ease-in-out;
+  }
+
+  @media screen and(max-width:1125px) {
+      .tabs {
+          padding: 0 2% 0 2%;
+      }
   }
 
   @media screen and(max-width:1070px) {
